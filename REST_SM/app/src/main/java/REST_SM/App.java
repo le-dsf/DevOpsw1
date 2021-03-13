@@ -12,6 +12,7 @@ public class App {
 
     public static void main(String[] args) {
         Spark.get("/users/0/welcome", (req, res) -> {return "Hallo Ueli";});
+        Spark.get("/users/1/welcome", (req, res) -> {return "Hallo Sue";});
         System.out.println(new App().getGreeting());
     }
 }
